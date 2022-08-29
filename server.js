@@ -10,12 +10,12 @@ const app = express();
 // connectDB();
 
 // Initialize middleware
-app.use(express.json({ extended: false }));
-app.use(express.urlencoded({ extended: true }))
-app.use(uploadFile);
-app.use(
-  cors()
-);
+// app.use(express.json({ extended: false }));
+// app.use(express.urlencoded({ extended: true }))
+// app.use(uploadFile);
+// app.use(
+//   cors()
+// );
 
 // Routes
 // app.use("/api/domains", require("./routes/api/domains"));
