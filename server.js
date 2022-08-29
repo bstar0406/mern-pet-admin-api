@@ -29,7 +29,7 @@ app.use(
 // app.use("/api/customers", require("./routes/api/old/customers"));
 // app.use("/api/file", require("./routes/api/file.controller"));
 
-app.use(express.static("resources/assets"));
+// app.use(express.static("resources/assets"));
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
