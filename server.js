@@ -1,13 +1,13 @@
 const express = require("express");
-// const connectDB = require("./config/db");
+const connectDB = require("./config/db");
 // const cors = require("cors");
 // const uploadFile = require("./middleware/upload")
 
 const app = express();
 
-// global.__baseurl = __dirname;
+global.__baseurl = __dirname;
 // // Connect to MongoDB
-// connectDB();
+connectDB();
 
 // Initialize middleware
 // app.use(express.json({ extended: false }));
