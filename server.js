@@ -1,13 +1,13 @@
 const express = require("express");
-const connectDB = require("./config/db");
-const cors = require("cors");
-const uploadFile = require("./middleware/upload")
+// const connectDB = require("./config/db");
+// const cors = require("cors");
+// const uploadFile = require("./middleware/upload")
 
 const app = express();
 
-global.__baseurl = __dirname;
-// Connect to MongoDB
-connectDB();
+// global.__baseurl = __dirname;
+// // Connect to MongoDB
+// connectDB();
 
 // Initialize middleware
 app.use(express.json({ extended: false }));
@@ -29,7 +29,7 @@ app.use(
 // app.use("/api/customers", require("./routes/api/old/customers"));
 // app.use("/api/file", require("./routes/api/file.controller"));
 
-app.use(express.static("resources/assets"));
+// app.use(express.static("resources/assets"));
 // Serve static assets in production
 // if (process.env.NODE_ENV === "production") {
 //   // Set static folder
