@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb://localhost:27017/myproject",
+  "mongoURI": "mongodb+srv://mongouser:star123!@cluster0.epckqa3.mongodb.net/?retryWrites=true&w=majority",
   "secretOrKey": "TopSecret"
 }
