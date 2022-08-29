@@ -76,10 +76,13 @@ router.put("/", async (req, res) => {
 });
 router.get("/", async (req, res) => {
   try {
-    const breeders = await Breeder.find({}).populate("petTypeId")
+    const offset = req.query.offset;
+    const limit = req.query.limit;
+    const countBreeders = await Breeder.find({})
+    const breeders = await Breeder.find({}).skip(parseInt(offset)).limit(parseInt(limit)).populate("petTypeId")
     res.json({
       success: true,
-      totalCount: breeders.length,
+      totalCount: countBreeders.length,
       entities: breeders
     });
   } catch (err) {
